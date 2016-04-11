@@ -1,0 +1,39 @@
+user=root,pass=x,uid=0,gid=0,fullname=root,homedir=/root,Shell=/bin/bash
+user=daemon,pass=x,uid=1,gid=1,fullname=daemon,homedir=/usr/sbin,Shell=/bin/sh
+user=bin,pass=x,uid=2,gid=2,fullname=bin,homedir=/bin,Shell=/bin/sh
+user=sys,pass=x,uid=3,gid=3,fullname=sys,homedir=/dev,Shell=/bin/sh
+user=sync,pass=x,uid=4,gid=65534,fullname=sync,homedir=/bin,Shell=/bin/sync
+user=games,pass=x,uid=5,gid=60,fullname=games,homedir=/usr/games,Shell=/bin/sh
+user=man,pass=x,uid=6,gid=12,fullname=man,homedir=/var/cache/man,Shell=/bin/sh
+user=lp,pass=x,uid=7,gid=7,fullname=lp,homedir=/var/spool/lpd,Shell=/bin/sh
+user=mail,pass=x,uid=8,gid=8,fullname=mail,homedir=/var/mail,Shell=/bin/sh
+user=news,pass=x,uid=9,gid=9,fullname=news,homedir=/var/spool/news,Shell=/bin/sh
+user=uucp,pass=x,uid=10,gid=10,fullname=uucp,homedir=/var/spool/uucp,Shell=/bin/sh
+user=proxy,pass=x,uid=13,gid=13,fullname=proxy,homedir=/bin,Shell=/bin/sh
+user=www-data,pass=x,uid=33,gid=33,fullname=www-data,homedir=/var/www,Shell=/bin/sh
+user=backup,pass=x,uid=34,gid=34,fullname=backup,homedir=/var/backups,Shell=/bin/sh
+user=list,pass=x,uid=38,gid=38,fullname=Mailing List Manager,homedir=/var/list,Shell=/bin/sh
+user=irc,pass=x,uid=39,gid=39,fullname=ircd,homedir=/var/run/ircd,Shell=/bin/sh
+user=gnats,pass=x,uid=41,gid=41,fullname=Gnats Bug-Reporting System (admin),homedir=/var/lib/gnats,Shell=/bin/sh
+user=nobody,pass=x,uid=65534,gid=65534,fullname=nobody,homedir=/nonexistent,Shell=/bin/sh
+user=libuuid,pass=x,uid=100,gid=101,fullname=,homedir=/var/lib/libuuid,Shell=/bin/sh
+user=syslog,pass=x,uid=101,gid=103,fullname=,homedir=/home/syslog,Shell=/bin/false
+user=messagebus,pass=x,uid=102,gid=105,fullname=,homedir=/var/run/dbus,Shell=/bin/false
+user=colord,pass=x,uid=103,gid=108,fullname=colord colour management daemon,,,,homedir=/var/lib/colord,Shell=/bin/false
+user=lightdm,pass=x,uid=104,gid=111,fullname=Light Display Manager,homedir=/var/lib/lightdm,Shell=/bin/false
+user=whoopsie,pass=x,uid=105,gid=114,fullname=,homedir=/nonexistent,Shell=/bin/false
+user=avahi-autoipd,pass=x,uid=106,gid=117,fullname=Avahi autoip daemon,,,,homedir=/var/lib/avahi-autoipd,Shell=/bin/false
+user=avahi,pass=x,uid=107,gid=118,fullname=Avahi mDNS daemon,,,,homedir=/var/run/avahi-daemon,Shell=/bin/false
+user=usbmux,pass=x,uid=108,gid=46,fullname=usbmux daemon,,,,homedir=/home/usbmux,Shell=/bin/false
+user=kernoops,pass=x,uid=109,gid=65534,fullname=Kernel Oops Tracking Daemon,,,,homedir=/,Shell=/bin/false
+user=pulse,pass=x,uid=110,gid=119,fullname=PulseAudio daemon,,,,homedir=/var/run/pulse,Shell=/bin/false
+user=rtkit,pass=x,uid=111,gid=122,fullname=RealtimeKit,,,,homedir=/proc,Shell=/bin/false
+user=speech-dispatcher,pass=x,uid=112,gid=29,fullname=Speech Dispatcher,,,,homedir=/var/run/speech-dispatcher,Shell=/bin/sh
+user=hplip,pass=x,uid=113,gid=7,fullname=HPLIP system user,,,,homedir=/var/run/hplip,Shell=/bin/false
+user=saned,pass=x,uid=114,gid=123,fullname=,homedir=/home/saned,Shell=/bin/false
+user=apuser,pass=x,uid=1000,gid=1000,fullname=apuser,,,,homedir=/home/apuser,Shell=/bin/bash
+user=sshd,pass=x,uid=115,gid=65534,fullname=,homedir=/var/run/sshd,Shell=/usr/sbin/nologin
+user=ftp,pass=x,uid=116,gid=126,fullname=ftp daemon,,,,homedir=/srv/ftp,Shell=/bin/false
+user=xrdp,pass=x,uid=117,gid=127,fullname=,homedir=/var/run/xrdp,Shell=/bin/false
+user=ntp,pass=x,uid=119,gid=129,fullname=,homedir=/home/ntp,Shell=/bin/false
+user=snmp,pass=x,uid=118,gid=128,fullname=,homedir=/var/lib/snmp,Shell=/bin/false
