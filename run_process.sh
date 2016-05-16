@@ -48,6 +48,11 @@ done
 : ${MNT_POINT:=/mnt/partition_${DEVICE_TYPE}_$$}
 : ${IO_OPERATION:='wr'}
 : ${TEST_LOOP:='1'}
+#dd argument
+: ${DD_BUFSIZE:='1M'}
+: ${DD_CNT:='10'}
+
+
 
 ############# Do the work ###########################################
 if [ -z $DEV_NODE ]; then
@@ -97,11 +102,19 @@ on_exit()
 
 trap on_exit EXIT
 
+
+
+
+
 SRC_FILE="/home/root/srctest_file_${DEVICE_TYPE}_$$"
 time dd if=/dev/urandom of=$SRC_FILE bs=$DD_BUFSIZE count=$DD_CNT
 sleep 10
 do_cmd ls -lh $SRC_FILE
 df -h
+
+
+
+
 
 x=0
 while [ $x -lt $TEST_LOOP ]
