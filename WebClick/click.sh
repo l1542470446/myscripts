@@ -13,9 +13,9 @@ do
         tmp=$( echo $url | grep -E -v "^#" )
         #echo "tmp : $tmp"
         if [ ! -z $tmp ] ; then
-            #curl -s $url > /dev/null
+            curl -s $url > /dev/null
             echo "click $i --> $url"
-            sleep 1
+            sleep 3
         fi
         #let "i=$i+1"
     done
