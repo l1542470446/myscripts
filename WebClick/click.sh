@@ -1,22 +1,30 @@
 #!/bin/sh
 
+echo "usage : ./click [file-name] [click-count]"
+
 url=""
 i=0
+
+urldb=$1
+clkcount=$2
+
 #echo -n "click : \r"
-while [ $i -lt $1 ]
+while [ $i -lt $clkcount ]
 do
+    j=1
     i=$( expr $i + 1 )
-    echo "click : $i"
+    echo "click : $i/$clkcount"
     tmp=''
-    cat url.db | while read url
+    cat $urldb | while read url
     do
         tmp=$( echo $url | grep -E -v "^#" )
         #echo "tmp : $tmp"
         if [ ! -z $tmp ] ; then
             curl -s $url > /dev/null
-            echo "click $i --> $url"
-            sleep 3
-        fi
+            echo "web$j --> $url"
+            sleep 1
+	    j=$( expr $j + 1 )
+	fi
         #let "i=$i+1"
     done
 done
