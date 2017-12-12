@@ -1,4 +1,20 @@
-#!/bin/sh
+#!/bin/bash
+
+function test()
+{
+	echo "test fun : 1st example"
+}
+
+function test1()
+{
+	echo "test argc  : $#"
+	if [ -n "$1" ];then
+		echo "test args 1: $1"
+	fi
+	if [ -n "$2" ];then
+		echo "test args 2: $2"
+	fi
+}
 
 fun()
 {
@@ -23,9 +39,13 @@ sdwrtest()
     done
 }
 
-#sdwrtest 5
-
-#itouch aaa bbb
-var1="1,2"
-var="aaa bbb $var1"
-fun $var
+test
+echo "===="
+test1 1
+echo "===="
+test1 "a"
+echo "===="
+test1 1 2
+echo "===="
+test1 "a" "b"
+echo "===="
