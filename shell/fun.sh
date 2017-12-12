@@ -16,29 +16,20 @@ function test1()
 	fi
 }
 
-fun()
+function fun1()
 {
-
-  echo "arg number : $#"
-  i=1
-  for a in $@
-  do
-    echo "arg $i : $a"
-    i=$(expr $i + 1)
-  done
+	return 2
 }
 
-sdwrtest()
+function fun2()
 {
-    echo $1
-    i=1
-    while [ $i -le $1 ]
-    do
-        echo  test$i.txt a$i
-        i=$(expr $i + 1  )
-    done
+	echo "function test"
+	echo "bb"
+	echo "aa"
+	return 33
 }
 
+echo "===="
 test
 echo "===="
 test1 1
@@ -48,4 +39,12 @@ echo "===="
 test1 1 2
 echo "===="
 test1 "a" "b"
-echo "===="
+echo "====test1 fun return val===="
+fun1
+ret=$?
+echo $ret
+echo "====test2 fun return val===="
+val=`fun2`
+ret=$?
+echo "val = $val"
+echo "ret = $ret"
