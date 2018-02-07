@@ -49,6 +49,13 @@ func()
 	echo "lb[1]=${lb[1]}"
 }
 
+argv_d="aa"
+function fund()
+{
+	eval argv_$1="bb";
+	return 0
+}
+
 echo '------------------'
 fun "${c[*]}"
 echo ${a[1]}
@@ -57,4 +64,12 @@ echo '------------------'
 funb "$d"
 echo '------------------'
 func "${a[*]}" "${b[*]}"
+
+echo '-d-----------------'
+
+echo $argv_d
+fund d
+echo $argv_d
+
+
 

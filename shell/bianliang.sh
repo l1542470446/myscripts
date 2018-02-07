@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 FIND=false
 
@@ -12,3 +12,9 @@ do
 done
 
 echo $FIND
+
+j=1
+a="bb"
+a1="a1"
+eval "echo $a1"
+eval "echo \$a$j"
